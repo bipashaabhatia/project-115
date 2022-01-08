@@ -1,0 +1,52 @@
+::placeholder { 
+    color: red !important; 
+    opacity: 1 !important; 
+  }
+  #mustache_color{
+    width: 400;
+    background-color: rgb(229, 255, 0);
+}
+h3{
+    font-size: 25px !important;
+
+}
+.btn btn-primary:hover{
+   
+    background: red !important;
+    animation: mymove 5s infinite !important;
+  }
+  
+  @keyframes mymove {
+    from {background-color: red !important;}
+    to {background-color: blue !important;}
+  }
+
+
+.btn-success:hover{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 0.5s ease infinite;
+	height: 8.5vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+canvas{
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    from{box-shadow: 1px 1px 38px red;}
+    to{box-shadow : 1px 1px 38px yellow;}
+}
